@@ -40,7 +40,7 @@ async function main() {
     logger.level = "debug";
   }
 
-  const token = env("GITHUB_TOKEN");
+  const token = env("AUTOMERGE_TOKEN");
 
   const octokit = new Octokit({
     auth: `token ${token}`,
